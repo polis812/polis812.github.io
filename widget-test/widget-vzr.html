@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      name="viewport"
+    />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="Полис812" name="apple-mobile-web-app-title" />
+
+    <title>Widget test</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .widget-block {
+        padding: 80px 0;
+      }
+
+      .container {
+        max-width: 1210px;
+        padding: 0 20px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 767px) {
+        .widget-block {
+          padding: 40px 0;
+        }
+
+        .container {
+          padding: 0 16px;
+        }
+      }
+    </style>
+  </head>
+  <header></header>
+  <body>
+    <div>
+      <div class="widget-block">
+        <div class="container">
+          <div id="polisWidgetBlock"></div>
+
+          <script src="//polis812.ru/build/widget/js/widget.min.js?v=0.1"></script>
+          <script>
+            Polis812Widget.createCalc('polisWidgetBlock', {
+              partnerId: 798,
+              canWritePromocode: true,
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>
